@@ -55,3 +55,62 @@ done;
 //app css a tag dexdecor non, color black
 //save and test
 done;
+
+//pages, sign-in-and-sign-up folder, compo and styles
+//in comp,func name SignInAndSignUpPage
+//div . sign-in-and-sign-up  SIGN IN
+//render in App route /sigin belowest
+//save and test
+
+//comp sign-in folder, sign-in comp and styles
+//class comp name SignIn
+//state, email password ''
+//render return div. sign-in
+//h2 I already have and account
+//span Sign in with your email and password
+//form input name email value state email required
+//label Email//// do this for pw
+
+//below, input type submit value Submit Form
+//onsubmit on form
+//create handleSubmit, prevent default as event
+// set the state back to empty string
+//setOnchange on input create handleChange
+//destructue value and name in event target
+//set the state [name]: value
+
+//render this to sign in Page
+//save and test
+done;
+
+//comp form-input folder, comp and styles
+//func comp, name FormInput
+//des props of handleChange, label, otherProps
+//div . group, input . form-input
+//call handleChange spread props
+//below, if label is true, render label else, null
+//in label . dynamic
+//`${otherprops.value.length ? 'shrink' : ''} form-input-label` }
+//render label
+
+//copy paste styles to form-input
+//render forminput to signin
+//change onchange to handlechange
+//add label to  email and pw
+//delete label tags
+//save and test
+
+//in signin styles,  .sign-in width 30vw
+done;
+//comp custom-buttom folder, comp and styles
+//func comp name CustomButton
+//button . custom-button
+//descrute childern and otherProps, spread other to button
+//render childern
+//add button styles
+//render button to sign in
+//save and test
+
+//in sign in styles,
+//display flex flex direct column
+//title margin 10 0
