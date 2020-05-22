@@ -114,3 +114,18 @@ done;
 //in sign in styles,
 //display flex flex direct column
 //title margin 10 0
+done;
+
+//REMOVE_ITEM carttype
+//add action, removeItem
+//add case to reducer
+//incart utils export const removeItemFromCart (the items, the removeitem)
+//create existingCartItem should be true or false
+//if existinCartItem  is 1, filter to remove
+// if cartItem.id = tocarttoremove id, return obj  , where quantity is less 1
+//else, return the cartItem
+//in reducer, add to cartItems the removeItemfrCart with 2 args
+
+//import addItem, and removeItem
+//modify dispatch
+//desctructure and bind to onClick
