@@ -129,3 +129,25 @@ done;
 //import addItem, and removeItem
 //modify dispatch
 //desctructure and bind to onClick
+done;
+
+//directory comp
+//cirecto redux
+//directory.reducer
+done;
+//comp, collections-oveview folder, comp styles
+//func name CollectionsOverview comp, styles import
+//import connect, createtructureselector, collectionPreview
+//import selectCollections
+//div. collections-overview
+//copy map from shop comp
+//delete unused from shop comp
+//mapstatetopros, connect
+
+//import Collection overview to shop comp and render
+
+//in collec overview styles
+// .collections-overview, display flex
+//flex direction column
+
+//save and test
