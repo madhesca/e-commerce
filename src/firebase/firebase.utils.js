@@ -10,7 +10,7 @@ const config = {
   storageBucket: "e-commerce-4d80b.appspot.com",
   messagingSenderId: "920585465487",
   appId: "1:920585465487:web:19e7fa55f1105e3abb4afa",
-  measurementId: "G-R5J356L0M6",
+  measurementId: "G-R5J356L0M6"
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -28,7 +28,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         displayName,
         email,
         createdAt,
-        ...additionalData,
+        ...additionalData
       });
     } catch (error) {
       console.log("error creating user", error.message);
@@ -38,14 +38,11 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   return userRef;
 };
 
-export const addCollectionsAndDocuments = async (
-  collectionKey,
-  objectsToAdd
-) => {
+export const addCollectionsAndDocuments = async (collectionKey, objectsToAdd) => {
   const collectionRef = firestore.collection(collectionKey);
 
   const batch = firestore.batch();
-  objectsToAdd.forEach((obj) => {
+  objectsToAdd.forEach(obj => {
     const newDocRef = collectionRef.doc();
     batch.set(newDocRef, obj);
   });
@@ -53,19 +50,22 @@ export const addCollectionsAndDocuments = async (
   return await batch.commit();
 };
 
-export const convertCollectionsSnapShotToMap = (collections) => {
-  const transformedCollection = collections.docs.map((doc) => {
+export const convertCollectionsSnapShotToMap = collections => {
+  const transformedCollection = collections.docs.map(doc => {
     const { title, items } = doc.data();
 
     return {
       routeName: encodeURI(title.toLowerCase()),
       id: doc.id,
       title,
-      items,
+      items
     };
   });
 
-  console.log(transformedCollection);
+  return transformedCollection.reduce((accumulator, collection) => {
+    accumulator[collection.title.toLowerCase()] = collection;
+    return accumulator;
+  }, {});
 };
 
 firebase.initializeApp(config);
