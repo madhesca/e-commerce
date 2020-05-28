@@ -151,3 +151,67 @@ done;
 //flex direction column
 
 //save and test
+done
+//put thunk to middleware store
+//types FETCH_COLLECTIONS_START,
+//FETCH_COLLECTIONS_SUCCESS
+//FETCH_COLLECTIONS_FAILURE
+
+//add isFEtching to state false, errorMessage undefined
+//case F..STart, set isFetching to true
+//SUCCESS. isFetchin false, update collections
+//FAILURE, isFet false, erroMage, payload
+
+//actions
+//change to fetchCollectionsStart
+//type START
+
+//fetchCollectionsSuccess, collectionMap arg
+//type SUCCESS , and setPayload
+
+//fetchCollectionsStartAsync, return dispatch => {}
+//copy from shop com then paste, del updateCollections(coll...)
+//import firestore and convertCollectionsSnapshotToMap from firebase utils
+//bekow collection ref, call dispatch
+//call fetchcollStart() inside
+
+//after collectionsMap var, call dispatch
+//call inside of it the fetcCollSuc (colmap)
+
+//fetchCollectionsFailure, errorMessage as arg
+//type FAILURE, set payload
+
+
+
+
+
+
+//set catch func arg err => call dispatch
+//call fetchcolfailure(error.message)
+
+
+
+
+
+//empty the comdidmount  and state
+//empty import on firebase
+
+//import fetchColleStarasync
+//import createStrucSelec
+
+
+//in selector create selectIsCollectionFetching
+//shop.isFetching
+//import this to shop
+
+
+//empty mapdispatch, above, create mapstate
+
+//in maPstate, call createSSlector and create prop of isCollectionFetching
+//value is the select var
+
+
+//in mapProps  dispatch arg, call fetchAzync
+//deconstruct is fetching beise maps and set this to is loading
+//inCompodedmount, desctructore  fetAysn and just call it
+//save and test
