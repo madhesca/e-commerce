@@ -214,4 +214,9 @@ done
 //in mapProps  dispatch arg, call fetchAzync
 //deconstruct is fetching beise maps and set this to is loading
 //inCompodedmount, desctructore  fetAysn and just call it
-//save and test
+/
+//in selector  selectIsCollectionsLoader
+// shop => !!shop.collections
+// import this on shop component
+//add this to mapState as isCollectionsLoaded
+//descture this and put this as the value for isLoading as !isCollectionLoaded
