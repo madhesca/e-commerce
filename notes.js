@@ -152,6 +152,9 @@ done;
 
 //save and test
 done
+
+
+Section 18
 //put thunk to middleware store
 //types FETCH_COLLECTIONS_START,
 //FETCH_COLLECTIONS_SUCCESS
@@ -180,30 +183,17 @@ done
 
 //fetchCollectionsFailure, errorMessage as arg
 //type FAILURE, set payload
-
-
-
-
-
-
 //set catch func arg err => call dispatch
 //call fetchcolfailure(error.message)
-
-
-
-
-
 //empty the comdidmount  and state
 //empty import on firebase
 
 //import fetchColleStarasync
 //import createStrucSelec
 
-
 //in selector create selectIsCollectionFetching
 //shop.isFetching
 //import this to shop
-
 
 //empty mapdispatch, above, create mapstate
 
